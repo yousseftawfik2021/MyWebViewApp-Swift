@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: |
         
-        xcodebuild  -destination 'generic/platform=iOS' -derivedDataPath "./build/DerivedData"  -configuration Debug   -project MyWebViewApp.xcodeproj -scheme webserver  CODE_SIGNING_ALLOWED=No ONLY_ACTIVE_ARCH=No
+        xcodebuild  -destination 'generic/platform=iOS' -derivedDataPath "./build/DerivedData"  -configuration Debug   -project MyWebViewApp.xcodeproj -scheme MyWebViewApp  CODE_SIGNING_ALLOWED=No ONLY_ACTIVE_ARCH=No
     - name: Upload 
       uses: actions/upload-artifact@v3.1.0
       with:
